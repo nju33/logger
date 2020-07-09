@@ -1,5 +1,5 @@
 {
-  "name": "@nju33/template-node-library",
+  "name": "@nju33/logger",
   "version": "0.0.0",
   "source": "src/index.ts",
   "main": "index.js",
@@ -34,6 +34,7 @@
     "eslint-plugin-standard": "4.0.1",
     "eslint-plugin-tsdoc": "0.2.5",
     "eslint-plugin-typescript-sort-keys": "1.2.0",
+    "fp-ts": "^2.7.0",
     "husky": "4.2.5",
     "imagemin-lint-staged": "0.4.0",
     "jest": "26.1.0",
@@ -51,20 +52,27 @@
     "typescript": "3.9.6"
   },
   "scripts": {
-    "patch": "yarn version --patch && yarn gen-src-docs",
-    "update": "yarn version --minor && yarn gen-src-docs",
-    "upgrade": "yarn version --upgrade && yarn gen-src-docs",
+    "patch": "yarn version --patch",
+    "update": "yarn version --minor",
+    "upgrade": "yarn version --upgrade",
     "build": "[ \"$CI\" = 'true' ] && yarn microbundle || :",
     "gen-src-docs": "typedoc --plugin typedoc-plugin-markdown --out docs src",
     "test": "jest --config jest.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com/nju33/template-node-library.git"
+    "url": "ssh://git@github.com/nju33/logger.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "author": "nju33 <nju33.ki@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "fp-ts": "^2.0.0"
+  },
+  "dependencies": {
+    "@types/http-errors": "^1.6.3",
+    "http-errors": "^1.8.0"
+  }
 }
