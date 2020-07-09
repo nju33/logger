@@ -1,4 +1,8 @@
-import { POST_URL, SlackLogger, TraitSlackLogger } from './slack-logger'
+import {
+  SLACK_LOGGER_POST_URL,
+  SlackLogger,
+  TraitSlackLogger
+} from './slack-logger'
 
 const divider = {
   type: 'divider'
@@ -50,7 +54,7 @@ describe('SlackLogger', () => {
       done: true
     })
 
-    expect(fetch).toHaveBeenNthCalledWith(1, POST_URL, {
+    expect(fetch).toHaveBeenNthCalledWith(1, SLACK_LOGGER_POST_URL, {
       method: 'POST',
       headers: {
         'content-type': 'application/json; charset=utf-8',
@@ -85,7 +89,7 @@ describe('SlackLogger', () => {
       })
     })
 
-    expect(fetch).toHaveBeenNthCalledWith(2, POST_URL, {
+    expect(fetch).toHaveBeenNthCalledWith(2, SLACK_LOGGER_POST_URL, {
       method: 'POST',
       headers: {
         'content-type': 'application/json; charset=utf-8',
@@ -120,7 +124,7 @@ describe('SlackLogger', () => {
       })
     })
 
-    expect(fetch).toHaveBeenNthCalledWith(3, POST_URL, {
+    expect(fetch).toHaveBeenNthCalledWith(3, SLACK_LOGGER_POST_URL, {
       method: 'POST',
       headers: {
         'content-type': 'application/json; charset=utf-8',
@@ -155,7 +159,7 @@ describe('SlackLogger', () => {
       })
     })
 
-    expect(fetch).toHaveBeenNthCalledWith(4, POST_URL, {
+    expect(fetch).toHaveBeenNthCalledWith(4, SLACK_LOGGER_POST_URL, {
       method: 'POST',
       headers: {
         'content-type': 'application/json; charset=utf-8',
