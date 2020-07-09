@@ -27,7 +27,7 @@
 
 • **fields**? : *Record‹string, string›*
 
-*Defined in [src/slack-logger.ts:29](https://github.com/nju33/logger/blob/0e8d412/src/slack-logger.ts#L29)*
+*Defined in [src/slack-logger.ts:29](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L29)*
 
 追加フィールド
 
@@ -37,6 +37,6 @@ ___
 
 • **message**: *string*
 
-*Defined in [src/slack-logger.ts:33](https://github.com/nju33/logger/blob/0e8d412/src/slack-logger.ts#L33)*
+*Defined in [src/slack-logger.ts:33](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L33)*
 
 メインメッセージ

@@ -34,7 +34,7 @@
 
 Ƭ **FetchFn**: *typeof fetch*
 
-*Defined in [src/slack-logger.ts:60](https://github.com/nju33/logger/blob/0e8d412/src/slack-logger.ts#L60)*
+*Defined in [src/slack-logger.ts:60](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L60)*
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 Ƭ **SlackLog**: *[SlackInfoLog](../interfaces/_src_slack_logger_.slackinfolog.md) | [SlackWarnLog](../interfaces/_src_slack_logger_.slackwarnlog.md) | [SlackErrorLog](../interfaces/_src_slack_logger_.slackerrorlog.md) | [SlackCompleteLog](../interfaces/_src_slack_logger_.slackcompletelog.md)*
 
-*Defined in [src/slack-logger.ts:52](https://github.com/nju33/logger/blob/0e8d412/src/slack-logger.ts#L52)*
+*Defined in [src/slack-logger.ts:52](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L52)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 Ƭ **SlackLoggerNextFunctiion**: *function*
 
-*Defined in [src/slack-logger.ts:13](https://github.com/nju33/logger/blob/0e8d412/src/slack-logger.ts#L13)*
+*Defined in [src/slack-logger.ts:13](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L13)*
 
 #### Type declaration:
 
@@ -68,4 +68,4 @@ Name | Type |
 
 • **POST_URL**: *"https://slack.com/api/chat.postMessage"* = "https://slack.com/api/chat.postMessage"
 
-*Defined in [src/slack-logger.ts:58](https://github.com/nju33/logger/blob/0e8d412/src/slack-logger.ts#L58)*
+*Defined in [src/slack-logger.ts:58](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L58)*
