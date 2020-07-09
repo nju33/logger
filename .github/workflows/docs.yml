@@ -36,17 +36,17 @@ jobs:
             yarn-
       - run: yarn
       - run: yarn gen-src-docs
-      - id: git-commit-docs
-        run: |
+      - run: |
+          git remote set-url origin https://nju33:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/nju33/logger.git
+
           git config --local user.email "nju33@gmail.com"
           git config --local user.name "nju33"
+
+          git fetch
+          git checkout master
           git add docs
 
           if git diff --cached --name-only | grep src > /dev/null; then
             git commit -m "docs: update from Docs workflow"
-            echo "::set-output name=commit::true"
+            git push origin HEAD
           fi
-      - uses: ad-m/github-push-action@master
-        if: steps.git-commit-docs.outputs.commit == 'true'
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
