@@ -29,6 +29,8 @@ jobs:
           restore-keys: |
             yarn-
       - run: yarn
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn test
       - run: yarn build
       - run: yarn publish --tag "$(node -p 'require(`./package.json`).version')"

@@ -35,6 +35,8 @@ jobs:
           restore-keys: |
             yarn-
       - run: yarn
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: yarn gen-src-docs
       - run: |
           git remote set-url origin https://nju33:${{ secrets.PERSONAL_ACCESS_TOKEN }}@github.com/nju33/logger.git
