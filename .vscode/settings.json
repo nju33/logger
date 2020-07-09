@@ -28,5 +28,6 @@
     ".{husky,lintstaged,renovate,stylelint,textlint,all-contributors}rc": "json"
   },
   "javascript.suggestionActions.enabled": false,
-  "jest.autoEnable": false
+  "jest.autoEnable": false,
+  "stylelint.enable": false
 }

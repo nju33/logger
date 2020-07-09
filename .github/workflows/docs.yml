@@ -39,6 +39,7 @@ jobs:
       - run: |
           git config --local user.email "nju33@gmail.com"
           git config --local user.name "nju33"
+          git add docs
           git commit -m "docs: update from docs workflow"
       - uses: ad-m/github-push-action@master
         with:
