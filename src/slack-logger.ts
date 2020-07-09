@@ -1,8 +1,12 @@
-// eslint-disable-next-line @typescript-eslint/triple-slash-reference
-/// <reference lib="dom" />
-
 import { isNone, none, Option, some } from 'fp-ts/lib/Option'
 import createHttpError from 'http-errors'
+import {
+  FetchFn,
+  getEmojiFrom,
+  LoggerLogVo,
+  LoggerNextFunctiion,
+  TraitLogger
+} from './logger'
 
 export interface SlackLoggerContext {
   accessToken: string
@@ -10,81 +14,11 @@ export interface SlackLoggerContext {
   partialFields?: Record<string, string>
 }
 
-export type SlackLoggerNextFunctiion = (log: SlackLog) => PromiseLike<void>
+export const SLACK_LOGGER_POST_URL = 'https://slack.com/api/chat.postMessage'
 
-export interface TraitSlackLogger {
-  createSession: (
-    context: SlackLoggerContext
-  ) => Generator<
-    SlackLoggerNextFunctiion,
-    SlackLoggerNextFunctiion,
-    boolean | undefined
-  >
-}
-
-export interface SlackLogCommon {
-  /**
-   * 追加フィールド
-   */
-  fields?: Record<string, string>
-  /**
-   * メインメッセージ
-   */
-  message: string
-}
-
-export interface SlackInfoLog extends SlackLogCommon {
-  type: 'info'
-}
-
-export interface SlackWarnLog extends SlackLogCommon {
-  type: 'warn'
-}
-
-export interface SlackErrorLog extends SlackLogCommon {
-  type: 'error'
-}
-
-export interface SlackCompleteLog extends SlackLogCommon {
-  type: 'complete'
-}
-
-export type SlackLog =
-  | SlackInfoLog
-  | SlackWarnLog
-  | SlackErrorLog
-  | SlackCompleteLog
-
-export const POST_URL = 'https://slack.com/api/chat.postMessage'
-
-export type FetchFn = typeof fetch
+export type TraitSlackLogger = TraitLogger<SlackLoggerContext>
 
 export class SlackLogger implements TraitSlackLogger {
-  /**
-   * Returns the specific symbol
-   *
-   * @param log - target log
-   */
-  static getEmojiFrom(log: SlackLog): string {
-    if (log.type === 'info') {
-      return 'ℹ️'
-    }
-
-    if (log.type === 'warn') {
-      return '⚠️'
-    }
-
-    if (log.type === 'error') {
-      return '🚨'
-    }
-
-    if (log.type === 'complete') {
-      return '✅'
-    }
-
-    return '🤕'
-  }
-
   static createBody({
     channelId,
     fields,
@@ -132,8 +66,8 @@ export class SlackLogger implements TraitSlackLogger {
     channelId,
     ...rest
   }: SlackLoggerContext): Generator<
-    SlackLoggerNextFunctiion,
-    SlackLoggerNextFunctiion,
+    LoggerNextFunctiion,
+    LoggerNextFunctiion,
     boolean | undefined
   > {
     const headers: Record<string, string> = {
@@ -143,13 +77,13 @@ export class SlackLogger implements TraitSlackLogger {
     const partialFields = rest.partialFields ?? {}
 
     let threadTs: Option<string> = none
-    const postMessage = async (log: SlackLog): Promise<void> => {
-      const emoji = SlackLogger.getEmojiFrom(log)
+    const postMessage = async (log: LoggerLogVo): Promise<void> => {
+      const emoji = getEmojiFrom(log)
 
       const text = [emoji, log.message].join(' ')
       const fields = { ...partialFields, ...(log.fields ?? {}) }
 
-      const fetching = this.fetch(POST_URL, {
+      const fetching = this.fetch(SLACK_LOGGER_POST_URL, {
         method: 'POST',
         headers,
         body: SlackLogger.createBody({ channelId, text, fields })

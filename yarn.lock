@@ -1251,6 +1251,14 @@
   resolved "https://registry.yarnpkg.com/@microsoft/tsdoc/-/tsdoc-0.12.20.tgz#4261285f666ee0c0378f810585dd4ec5bbfa8852"
   integrity sha512-/b13m37QZYPV6nCOiqkFyvlQjlTNvAcQpgFZ6ZKIqtStJxNdqVo/frULubxMUMWi6p9Uo5f4BRlguv5ViFcL0A==
 
+"@nju33/jsonbin-api@^0.0.7":
+  version "0.0.7"
+  resolved "https://npm.pkg.github.com/download/@nju33/jsonbin-api/0.0.7/e1e71b9167d4d5fa1a55bb22e9cf3b1d9d9fb81f87c7e9c20224d62503648026#de18bf8e4831c3dfab8689b7c22f253ab6734cb6"
+  integrity sha512-aopUWuAWMUXqKkll6XE7b327O+dt3DFV94hrt0y2mGp7LIBycVCQ1dkLzPfZM9WoBFPqwXclKA4JNfKE6ppowA==
+  dependencies:
+    "@types/http-errors" "^1.6.3"
+    http-errors "^1.8.0"
+
 "@rollup/plugin-alias@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-3.1.1.tgz#bb96cf37fefeb0a953a6566c284855c7d1cd290c"
