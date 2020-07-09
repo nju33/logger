@@ -42,12 +42,21 @@ export type LoggerLogVo =
   | LoggerErrorLogVo
   | LoggerCompleteLogVo
 
-export type LoggerNextFunctiion = (log: LoggerLogVo) => PromiseLike<void>
+export type LoggerNextFunctiion<LoggerNextFunctionResult> = (
+  log: LoggerLogVo
+) => PromiseLike<LoggerNextFunctionResult>
 
-export interface TraitLogger<Context extends object> {
+export interface TraitLogger<
+  Context extends object,
+  LoggerNextFunctionResult = unknown
+> {
   createSession: (
     context: Context
-  ) => Generator<LoggerNextFunctiion, LoggerNextFunctiion, boolean | undefined>
+  ) => Generator<
+    LoggerNextFunctiion<LoggerNextFunctionResult>,
+    LoggerNextFunctiion<LoggerNextFunctionResult>,
+    boolean | undefined
+  >
 }
 /**
  * Returns the specific symbol

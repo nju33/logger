@@ -1,35 +1,109 @@
-import { isNone, none, Option, some } from 'fp-ts/lib/Option'
-import createHttpError from 'http-errors'
+import { Either } from 'fp-ts/lib/Either'
+import { pipe } from 'fp-ts/lib/function'
+import { fold, fromEither, isNone, map, none, Option } from 'fp-ts/lib/Option'
+import { tryCatch } from 'fp-ts/lib/TaskEither'
+import createHttpError, { HttpError } from 'http-errors'
 import {
   FetchFn,
   getEmojiFrom,
-  LoggerLogVo,
   LoggerNextFunctiion,
   TraitLogger
 } from './logger'
 
 export interface SlackLoggerContext {
   accessToken: string
+  asUser?: boolean
   channelId: string
   partialFields?: Record<string, string>
 }
 
 export const SLACK_LOGGER_POST_URL = 'https://slack.com/api/chat.postMessage'
 
-export type TraitSlackLogger = TraitLogger<SlackLoggerContext>
+export interface PostMessageResultAsBotVo {
+  channel: string
+  message: {
+    bot_id: string
+    subtype: string
+    text: string
+    ts: string
+    type: string
+    username: string
+  }
+  ok: boolean
+  ts: string
+}
+
+export interface PostMesssageResultAsUserVo {
+  channel: string
+  message: {
+    bot_id: string
+    bot_profile: {
+      app_id: string
+      deleted: boolean
+      icons: {
+        image_36: string
+        image_48: string
+        image_72: string
+      }
+      id: string
+      name: string
+      team_id: string
+      updated: number
+    }
+    team: string
+    text: string
+    ts: string
+    type: string
+    user: string
+  }
+  ok: boolean
+  ts: string
+}
+
+export type PostMessageResultVo =
+  | PostMessageResultAsBotVo
+  | PostMesssageResultAsUserVo
+
+export type SlackLoggerNextFunctiion = LoggerNextFunctiion<
+  Either<HttpError | TypeError, PostMessageResultVo>
+>
+
+export type TraitSlackLogger = TraitLogger<
+  SlackLoggerContext,
+  Either<HttpError | TypeError, PostMessageResultVo>
+>
 
 export class SlackLogger implements TraitSlackLogger {
   static createBody({
+    asUser,
     channelId,
     fields,
-    text
+    text,
+    threadTs
   }: {
+    asUser: boolean
     channelId: string
     fields: Record<string, string>
     text: string
+    threadTs: Option<string>
   }): string {
+    // eslint-disable-next-line @typescript-eslint/naming-convention
+    const thread_ts: Record<string, string> = pipe(
+      threadTs,
+      fold(
+        () => {
+          return {}
+        },
+        (ts) => {
+          return { thread_ts: ts }
+        }
+      )
+    )
+
     return JSON.stringify({
       channel: channelId,
+      as_user: asUser,
+      ...thread_ts,
       blocks: [
         {
           type: 'section',
@@ -66,8 +140,8 @@ export class SlackLogger implements TraitSlackLogger {
     channelId,
     ...rest
   }: SlackLoggerContext): Generator<
-    LoggerNextFunctiion,
-    LoggerNextFunctiion,
+    SlackLoggerNextFunctiion,
+    SlackLoggerNextFunctiion,
     boolean | undefined
   > {
     const headers: Record<string, string> = {
@@ -75,9 +149,10 @@ export class SlackLogger implements TraitSlackLogger {
       authorization: `Bearer ${accessToken}`
     }
     const partialFields = rest.partialFields ?? {}
+    const asUser = rest.asUser ?? false
 
     let threadTs: Option<string> = none
-    const postMessage = async (log: LoggerLogVo): Promise<void> => {
+    const postMessage: SlackLoggerNextFunctiion = async (log) => {
       const emoji = getEmojiFrom(log)
 
       const text = [emoji, log.message].join(' ')
@@ -86,8 +161,14 @@ export class SlackLogger implements TraitSlackLogger {
       const fetching = this.fetch(SLACK_LOGGER_POST_URL, {
         method: 'POST',
         headers,
-        body: SlackLogger.createBody({ channelId, text, fields })
-      }).then<{ ts: string }>(async (response) => {
+        body: SlackLogger.createBody({
+          channelId,
+          text,
+          fields,
+          threadTs,
+          asUser
+        })
+      }).then<PostMessageResultVo>(async (response) => {
         if (response.ok) {
           return await response.json()
         }
@@ -95,9 +176,21 @@ export class SlackLogger implements TraitSlackLogger {
         throw createHttpError(response.status, response.statusText)
       })
 
+      const postMessageResult = await tryCatch(
+        async () => await fetching,
+        (error) => error as HttpError | TypeError
+      )()
+
       if (isNone(threadTs)) {
-        threadTs = some((await fetching).ts)
+        threadTs = pipe(
+          fromEither(postMessageResult),
+          map((result) => {
+            return result.ts
+          })
+        )
       }
+
+      return postMessageResult
     }
 
     let complete = false

@@ -1,3 +1,4 @@
+import * as E from 'fp-ts/lib/Either'
 import { JsonbinLogger, TraitJsonBinLogger } from './jsonbin-logger'
 
 describe('JsonbinLogger', () => {
@@ -30,10 +31,18 @@ describe('JsonbinLogger', () => {
       partialFields: { foo: 'bar' }
     })
 
-    await logSession.next().value({
+    const bin = await logSession.next().value({
       type: 'info',
       message: 'info message'
     })
+
+    expect(bin).toMatchObject(
+      E.right({
+        metadata: {
+          id: 'foo'
+        }
+      })
+    )
 
     expect(fetch).toHaveBeenNthCalledWith(1, 'https://api.jsonbin.io/v3/b', {
       method: 'POST',

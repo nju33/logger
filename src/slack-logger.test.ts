@@ -15,7 +15,9 @@ describe('SlackLogger', () => {
   beforeEach(() => {
     fetch = jest.fn().mockResolvedValue({
       ok: true,
-      json: jest.fn().mockResolvedValue({})
+      json: jest.fn().mockResolvedValue({
+        ts: '0000000000'
+      })
     })
 
     logger = new SlackLogger(fetch)
@@ -30,10 +32,11 @@ describe('SlackLogger', () => {
       }
     })
 
-    await logSession.next().value({
+    const result = await logSession.next().value({
       type: 'info',
       message: 'info message'
     })
+    expect(result)
 
     await logSession.next().value({
       type: 'warn',
@@ -62,6 +65,7 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
+        as_user: false,
         blocks: [
           {
             type: 'section',
@@ -97,6 +101,8 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
+        as_user: false,
+        thread_ts: '0000000000',
         blocks: [
           {
             type: 'section',
@@ -132,6 +138,8 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
+        as_user: false,
+        thread_ts: '0000000000',
         blocks: [
           {
             type: 'section',
@@ -167,6 +175,8 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
+        as_user: false,
+        thread_ts: '0000000000',
         blocks: [
           {
             type: 'section',
