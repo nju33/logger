@@ -32,7 +32,7 @@
 
 \+ **new SlackLogger**(`fetch`: [FetchFn](../modules/_src_slack_logger_.md#fetchfn)): *[SlackLogger](_src_slack_logger_.slacklogger.md)*
 
-*Defined in [src/slack-logger.ts:126](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L126)*
+*Defined in [src/slack-logger.ts:126](https://github.com/nju33/logger/blob/a1a1c84/src/slack-logger.ts#L126)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 • **fetch**: *[FetchFn](../modules/_src_slack_logger_.md#fetchfn)*
 
-*Defined in [src/slack-logger.ts:128](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L128)*
+*Defined in [src/slack-logger.ts:128](https://github.com/nju33/logger/blob/a1a1c84/src/slack-logger.ts#L128)*
 
 ## Methods
 
@@ -56,7 +56,7 @@ Name | Type |
 
 ▸ **createSession**(`__namedParameters`: object): *Generator‹[SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), [SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), boolean | undefined›*
 
-*Defined in [src/slack-logger.ts:130](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L130)*
+*Defined in [src/slack-logger.ts:130](https://github.com/nju33/logger/blob/a1a1c84/src/slack-logger.ts#L130)*
 
 **Parameters:**
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **createBody**(`__namedParameters`: object): *string*
 
-*Defined in [src/slack-logger.ts:88](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L88)*
+*Defined in [src/slack-logger.ts:88](https://github.com/nju33/logger/blob/a1a1c84/src/slack-logger.ts#L88)*
 
 **Parameters:**
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **getEmojiFrom**(`log`: [SlackLog](../modules/_src_slack_logger_.md#slacklog)): *string*
 
-*Defined in [src/slack-logger.ts:68](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L68)*
+*Defined in [src/slack-logger.ts:68](https://github.com/nju33/logger/blob/a1a1c84/src/slack-logger.ts#L68)*
 
 Returns the specific symbol
 

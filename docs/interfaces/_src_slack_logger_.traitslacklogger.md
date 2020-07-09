@@ -22,7 +22,7 @@
 
 • **createSession**: *function*
 
-*Defined in [src/slack-logger.ts:16](https://github.com/nju33/logger/blob/3d09c9d/src/slack-logger.ts#L16)*
+*Defined in [src/slack-logger.ts:16](https://github.com/nju33/logger/blob/a1a1c84/src/slack-logger.ts#L16)*
 
 #### Type declaration:
 
