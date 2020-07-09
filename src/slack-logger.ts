@@ -60,6 +60,11 @@ export const POST_URL = 'https://slack.com/api/chat.postMessage'
 export type FetchFn = typeof fetch
 
 export class SlackLogger implements TraitSlackLogger {
+  /**
+   * Returns the specific symbol
+   *
+   * @param log - target log
+   */
   static getEmojiFrom(log: SlackLog): string {
     if (log.type === 'info') {
       return 'ℹ️'
