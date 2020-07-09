@@ -1,6 +1,6 @@
 {
   "name": "@nju33/logger",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "source": "src/index.ts",
   "main": "index.js",
   "module": "index.module.js",
