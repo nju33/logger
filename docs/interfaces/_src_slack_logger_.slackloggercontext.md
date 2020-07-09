@@ -11,6 +11,7 @@
 ### Properties
 
 * [accessToken](_src_slack_logger_.slackloggercontext.md#accesstoken)
+* [asUser](_src_slack_logger_.slackloggercontext.md#optional-asuser)
 * [channelId](_src_slack_logger_.slackloggercontext.md#channelid)
 * [partialFields](_src_slack_logger_.slackloggercontext.md#optional-partialfields)
 
@@ -20,7 +21,15 @@
 
 • **accessToken**: *string*
 
-*Defined in [src/slack-logger.ts:12](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L12)*
+*Defined in [src/slack-logger.ts:14](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L14)*
+
+___
+
+### `Optional` asUser
+
+• **asUser**? : *undefined | false | true*
+
+*Defined in [src/slack-logger.ts:15](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L15)*
 
 ___
 
@@ -28,7 +37,7 @@ ___
 
 • **channelId**: *string*
 
-*Defined in [src/slack-logger.ts:13](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L13)*
+*Defined in [src/slack-logger.ts:16](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L16)*
 
 ___
 
@@ -36,4 +45,4 @@ ___
 
 • **partialFields**? : *Record‹string, string›*
 
-*Defined in [src/slack-logger.ts:14](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L14)*
+*Defined in [src/slack-logger.ts:17](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L17)*

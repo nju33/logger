@@ -12,6 +12,7 @@
 * [JsonBinLogVo](_src_index_.md#jsonbinlogvo)
 * [JsonbinLogger](_src_index_.md#jsonbinlogger)
 * [JsonbinLoggerContext](_src_index_.md#jsonbinloggercontext)
+* [JsonbinLoggerNextFunction](_src_index_.md#jsonbinloggernextfunction)
 * [LoggerCompleteLogVo](_src_index_.md#loggercompletelogvo)
 * [LoggerErrorLogVo](_src_index_.md#loggererrorlogvo)
 * [LoggerInfoLogVo](_src_index_.md#loggerinfologvo)
@@ -19,9 +20,13 @@
 * [LoggerLogVo](_src_index_.md#loggerlogvo)
 * [LoggerNextFunctiion](_src_index_.md#loggernextfunctiion)
 * [LoggerWarnLogVo](_src_index_.md#loggerwarnlogvo)
+* [PostMessageResultAsBotVo](_src_index_.md#postmessageresultasbotvo)
+* [PostMessageResultVo](_src_index_.md#postmessageresultvo)
+* [PostMesssageResultAsUserVo](_src_index_.md#postmesssageresultasuservo)
 * [SLACK_LOGGER_POST_URL](_src_index_.md#slack_logger_post_url)
 * [SlackLogger](_src_index_.md#slacklogger)
 * [SlackLoggerContext](_src_index_.md#slackloggercontext)
+* [SlackLoggerNextFunctiion](_src_index_.md#slackloggernextfunctiion)
 * [TraitJsonBinLogger](_src_index_.md#traitjsonbinlogger)
 * [TraitLogger](_src_index_.md#traitlogger)
 * [TraitSlackLogger](_src_index_.md#traitslacklogger)
@@ -62,6 +67,12 @@ ___
 ###  JsonbinLoggerContext
 
 • **JsonbinLoggerContext**:
+
+___
+
+###  JsonbinLoggerNextFunction
+
+• **JsonbinLoggerNextFunction**:
 
 ___
 
@@ -107,6 +118,24 @@ ___
 
 ___
 
+###  PostMessageResultAsBotVo
+
+• **PostMessageResultAsBotVo**:
+
+___
+
+###  PostMessageResultVo
+
+• **PostMessageResultVo**:
+
+___
+
+###  PostMesssageResultAsUserVo
+
+• **PostMesssageResultAsUserVo**:
+
+___
+
 ###  SLACK_LOGGER_POST_URL
 
 • **SLACK_LOGGER_POST_URL**:
@@ -122,6 +151,12 @@ ___
 ###  SlackLoggerContext
 
 • **SlackLoggerContext**:
+
+___
+
+###  SlackLoggerNextFunctiion
+
+• **SlackLoggerNextFunctiion**:
 
 ___
 

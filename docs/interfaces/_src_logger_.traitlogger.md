@@ -1,10 +1,12 @@
 [@nju33/logger](../README.md) › [Globals](../globals.md) › ["src/logger"](../modules/_src_logger_.md) › [TraitLogger](_src_logger_.traitlogger.md)
 
-# Interface: TraitLogger ‹**Context**›
+# Interface: TraitLogger ‹**Context, LoggerNextFunctionResult**›
 
 ## Type parameters
 
 ▪ **Context**: *object*
+
+▪ **LoggerNextFunctionResult**
 
 ## Hierarchy
 
@@ -27,11 +29,11 @@
 
 • **createSession**: *function*
 
-*Defined in [src/logger.ts:48](https://github.com/nju33/logger/blob/22b1f74/src/logger.ts#L48)*
+*Defined in [src/logger.ts:53](https://github.com/nju33/logger/blob/4563674/src/logger.ts#L53)*
 
 #### Type declaration:
 
-▸ (`context`: Context): *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), boolean | undefined›*
+▸ (`context`: Context): *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion)‹LoggerNextFunctionResult›, [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion)‹LoggerNextFunctionResult›, boolean | undefined›*
 
 **Parameters:**
 

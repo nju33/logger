@@ -30,7 +30,7 @@
 
 \+ **new JsonbinLogger**(`fetch`: [FetchFn](../modules/_src_logger_.md#fetchfn)): *[JsonbinLogger](_src_jsonbin_logger_.jsonbinlogger.md)*
 
-*Defined in [src/jsonbin-logger.ts:33](https://github.com/nju33/logger/blob/22b1f74/src/jsonbin-logger.ts#L33)*
+*Defined in [src/jsonbin-logger.ts:48](https://github.com/nju33/logger/blob/4563674/src/jsonbin-logger.ts#L48)*
 
 **Parameters:**
 
@@ -46,15 +46,15 @@ Name | Type |
 
 • **bin**: *TraitBin*
 
-*Defined in [src/jsonbin-logger.ts:33](https://github.com/nju33/logger/blob/22b1f74/src/jsonbin-logger.ts#L33)*
+*Defined in [src/jsonbin-logger.ts:48](https://github.com/nju33/logger/blob/4563674/src/jsonbin-logger.ts#L48)*
 
 ## Methods
 
 ###  createSession
 
-▸ **createSession**(`__namedParameters`: object): *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), boolean | undefined›*
+▸ **createSession**(`__namedParameters`: object): *Generator‹[JsonbinLoggerNextFunction](../modules/_src_jsonbin_logger_.md#jsonbinloggernextfunction), [JsonbinLoggerNextFunction](../modules/_src_jsonbin_logger_.md#jsonbinloggernextfunction), boolean | undefined›*
 
-*Defined in [src/jsonbin-logger.ts:39](https://github.com/nju33/logger/blob/22b1f74/src/jsonbin-logger.ts#L39)*
+*Defined in [src/jsonbin-logger.ts:54](https://github.com/nju33/logger/blob/4563674/src/jsonbin-logger.ts#L54)*
 
 **Parameters:**
 
@@ -67,4 +67,4 @@ Name | Type |
 `rest` | rest |
 `secretKey` | string |
 
-**Returns:** *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), boolean | undefined›*
+**Returns:** *Generator‹[JsonbinLoggerNextFunction](../modules/_src_jsonbin_logger_.md#jsonbinloggernextfunction), [JsonbinLoggerNextFunction](../modules/_src_jsonbin_logger_.md#jsonbinloggernextfunction), boolean | undefined›*

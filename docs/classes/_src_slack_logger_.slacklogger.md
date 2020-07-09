@@ -31,7 +31,7 @@
 
 \+ **new SlackLogger**(`fetch`: [FetchFn](../modules/_src_logger_.md#fetchfn)): *[SlackLogger](_src_slack_logger_.slacklogger.md)*
 
-*Defined in [src/slack-logger.ts:60](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L60)*
+*Defined in [src/slack-logger.ts:134](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L134)*
 
 **Parameters:**
 
@@ -47,15 +47,15 @@ Name | Type |
 
 • **fetch**: *[FetchFn](../modules/_src_logger_.md#fetchfn)*
 
-*Defined in [src/slack-logger.ts:62](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L62)*
+*Defined in [src/slack-logger.ts:136](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L136)*
 
 ## Methods
 
 ###  createSession
 
-▸ **createSession**(`__namedParameters`: object): *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), boolean | undefined›*
+▸ **createSession**(`__namedParameters`: object): *Generator‹[SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), [SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), boolean | undefined›*
 
-*Defined in [src/slack-logger.ts:64](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L64)*
+*Defined in [src/slack-logger.ts:138](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L138)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ Name | Type |
 `channelId` | string |
 `rest` | rest |
 
-**Returns:** *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion), boolean | undefined›*
+**Returns:** *Generator‹[SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), [SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), boolean | undefined›*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **createBody**(`__namedParameters`: object): *string*
 
-*Defined in [src/slack-logger.ts:22](https://github.com/nju33/logger/blob/22b1f74/src/slack-logger.ts#L22)*
+*Defined in [src/slack-logger.ts:77](https://github.com/nju33/logger/blob/4563674/src/slack-logger.ts#L77)*
 
 **Parameters:**
 
@@ -83,8 +83,10 @@ ___
 
 Name | Type |
 ------ | ------ |
+`asUser` | boolean |
 `channelId` | string |
 `fields` | object |
 `text` | string |
+`threadTs` | None &#124; Some‹string› |
 
 **Returns:** *string*
