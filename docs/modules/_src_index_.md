@@ -7,9 +7,12 @@
 ### References
 
 * [FetchFn](_src_index_.md#fetchfn)
+* [JsonBinLogObserverOnChange](_src_index_.md#jsonbinlogobserveronchange)
 * [JsonBinLogRecordHistoryVo](_src_index_.md#jsonbinlogrecordhistoryvo)
 * [JsonBinLogRecordVo](_src_index_.md#jsonbinlogrecordvo)
 * [JsonBinLogVo](_src_index_.md#jsonbinlogvo)
+* [JsonbinLogObserverContext](_src_index_.md#jsonbinlogobservercontext)
+* [JsonbinLogObservre](_src_index_.md#jsonbinlogobservre)
 * [JsonbinLogger](_src_index_.md#jsonbinlogger)
 * [JsonbinLoggerContext](_src_index_.md#jsonbinloggercontext)
 * [JsonbinLoggerNextFunction](_src_index_.md#jsonbinloggernextfunction)
@@ -28,6 +31,7 @@
 * [SlackLoggerContext](_src_index_.md#slackloggercontext)
 * [SlackLoggerNextFunctiion](_src_index_.md#slackloggernextfunctiion)
 * [TraitJsonBinLogger](_src_index_.md#traitjsonbinlogger)
+* [TraitJsonbinLogObserver](_src_index_.md#traitjsonbinlogobserver)
 * [TraitLogger](_src_index_.md#traitlogger)
 * [TraitSlackLogger](_src_index_.md#traitslacklogger)
 * [getEmojiFrom](_src_index_.md#getemojifrom)
@@ -37,6 +41,12 @@
 ###  FetchFn
 
 • **FetchFn**:
+
+___
+
+###  JsonBinLogObserverOnChange
+
+• **JsonBinLogObserverOnChange**:
 
 ___
 
@@ -55,6 +65,18 @@ ___
 ###  JsonBinLogVo
 
 • **JsonBinLogVo**:
+
+___
+
+###  JsonbinLogObserverContext
+
+• **JsonbinLogObserverContext**:
+
+___
+
+###  JsonbinLogObservre
+
+• **JsonbinLogObservre**:
 
 ___
 
@@ -163,6 +185,12 @@ ___
 ###  TraitJsonBinLogger
 
 • **TraitJsonBinLogger**:
+
+___
+
+###  TraitJsonbinLogObserver
+
+• **TraitJsonbinLogObserver**:
 
 ___
 

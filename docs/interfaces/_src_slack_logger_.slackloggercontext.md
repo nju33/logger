@@ -21,7 +21,7 @@
 
 • **accessToken**: *string*
 
-*Defined in [src/slack-logger.ts:14](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L14)*
+*Defined in [src/slack-logger.ts:14](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L14)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **asUser**? : *undefined | false | true*
 
-*Defined in [src/slack-logger.ts:15](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L15)*
+*Defined in [src/slack-logger.ts:15](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L15)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **channelId**: *string*
 
-*Defined in [src/slack-logger.ts:16](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L16)*
+*Defined in [src/slack-logger.ts:16](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L16)*
 
 ___
 
@@ -45,4 +45,4 @@ ___
 
 • **partialFields**? : *Record‹string, string›*
 
-*Defined in [src/slack-logger.ts:17](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L17)*
+*Defined in [src/slack-logger.ts:17](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L17)*

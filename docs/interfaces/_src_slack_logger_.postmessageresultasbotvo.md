@@ -21,7 +21,7 @@
 
 • **channel**: *string*
 
-*Defined in [src/slack-logger.ts:23](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L23)*
+*Defined in [src/slack-logger.ts:23](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L23)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **message**: *object*
 
-*Defined in [src/slack-logger.ts:24](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L24)*
+*Defined in [src/slack-logger.ts:24](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L24)*
 
 #### Type declaration:
 
@@ -51,7 +51,7 @@ ___
 
 • **ok**: *boolean*
 
-*Defined in [src/slack-logger.ts:32](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L32)*
+*Defined in [src/slack-logger.ts:32](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L32)*
 
 ___
 
@@ -59,4 +59,4 @@ ___
 
 • **ts**: *string*
 
-*Defined in [src/slack-logger.ts:33](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L33)*
+*Defined in [src/slack-logger.ts:33](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L33)*

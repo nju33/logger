@@ -31,7 +31,7 @@
 
 \+ **new SlackLogger**(`fetch`: [FetchFn](../modules/_src_logger_.md#fetchfn)): *[SlackLogger](_src_slack_logger_.slacklogger.md)*
 
-*Defined in [src/slack-logger.ts:134](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L134)*
+*Defined in [src/slack-logger.ts:134](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L134)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **fetch**: *[FetchFn](../modules/_src_logger_.md#fetchfn)*
 
-*Defined in [src/slack-logger.ts:136](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L136)*
+*Defined in [src/slack-logger.ts:136](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L136)*
 
 ## Methods
 
@@ -55,7 +55,7 @@ Name | Type |
 
 ▸ **createSession**(`__namedParameters`: object): *Generator‹[SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), [SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), boolean | undefined›*
 
-*Defined in [src/slack-logger.ts:138](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L138)*
+*Defined in [src/slack-logger.ts:138](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L138)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **createBody**(`__namedParameters`: object): *string*
 
-*Defined in [src/slack-logger.ts:77](https://github.com/nju33/logger/blob/8580ee0/src/slack-logger.ts#L77)*
+*Defined in [src/slack-logger.ts:77](https://github.com/nju33/logger/blob/90e4448/src/slack-logger.ts#L77)*
 
 **Parameters:**
 
