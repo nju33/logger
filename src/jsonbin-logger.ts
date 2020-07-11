@@ -8,7 +8,7 @@ import {
   FetchFn,
   getEmojiFrom,
   LoggerLogVo,
-  LoggerNextFunctiion,
+  LoggerNextFunction,
   TraitLogger
 } from './logger'
 
@@ -37,7 +37,7 @@ export interface JsonbinLogRecordVo {
   history: JsonbinLogRecordHistoryVo[]
 }
 
-export type JsonbinLoggerNextFunction = LoggerNextFunctiion<
+export type JsonbinLoggerNextFunction = LoggerNextFunction<
   Either<
     HttpError | TypeError,
     PostResultBin<JsonbinLogRecordVo> | PutResultBin<JsonbinLogRecordVo>

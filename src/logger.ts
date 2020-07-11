@@ -42,7 +42,7 @@ export type LoggerLogVo =
   | LoggerErrorLogVo
   | LoggerCompleteLogVo
 
-export type LoggerNextFunctiion<LoggerNextFunctionResult> = (
+export type LoggerNextFunction<LoggerNextFunctionResult> = (
   log: LoggerLogVo
 ) => PromiseLike<LoggerNextFunctionResult>
 
@@ -53,8 +53,8 @@ export interface TraitLogger<
   createSession: (
     context: Context
   ) => Generator<
-    LoggerNextFunctiion<LoggerNextFunctionResult>,
-    LoggerNextFunctiion<LoggerNextFunctionResult>,
+    LoggerNextFunction<LoggerNextFunctionResult>,
+    LoggerNextFunction<LoggerNextFunctionResult>,
     boolean | undefined
   >
 }

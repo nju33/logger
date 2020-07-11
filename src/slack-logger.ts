@@ -6,7 +6,7 @@ import createHttpError, { HttpError } from 'http-errors'
 import {
   FetchFn,
   getEmojiFrom,
-  LoggerNextFunctiion,
+  LoggerNextFunction,
   TraitLogger
 } from './logger'
 
@@ -64,7 +64,7 @@ export type PostMessageResultVo =
   | PostMessageResultAsBotVo
   | PostMesssageResultAsUserVo
 
-export type SlackLoggerNextFunctiion = LoggerNextFunctiion<
+export type SlackLoggerNextFunction = LoggerNextFunction<
   Either<HttpError | TypeError, PostMessageResultVo>
 >
 
@@ -140,8 +140,8 @@ export class SlackLogger implements TraitSlackLogger {
     channelId,
     ...rest
   }: SlackLoggerContext): Generator<
-    SlackLoggerNextFunctiion,
-    SlackLoggerNextFunctiion,
+    SlackLoggerNextFunction,
+    SlackLoggerNextFunction,
     boolean | undefined
   > {
     const headers: Record<string, string> = {
@@ -152,7 +152,7 @@ export class SlackLogger implements TraitSlackLogger {
     const asUser = rest.asUser ?? false
 
     let threadTs: Option<string> = none
-    const postMessage: SlackLoggerNextFunctiion = async (log) => {
+    const postMessage: SlackLoggerNextFunction = async (log) => {
       const emoji = getEmojiFrom(log)
 
       const text = [emoji, log.message].join(' ')
