@@ -11,6 +11,7 @@ export interface JsonbinLogObserverContext {
 }
 
 export type JsonBinLogObserverOnChange = (entry: {
+  binId: string
   current: GetResultBin<JsonBinLogRecordVo>
   prev: Option<GetResultBin<JsonBinLogRecordVo>>
 }) => Promise<unknown>
@@ -51,6 +52,7 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
 
           // eslint-disable-next-line no-void
           void this.onChange({
+            binId: binId,
             current: bin,
             prev: this.prev
           })
@@ -59,6 +61,7 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
         ) {
           // eslint-disable-next-line no-void
           void this.onChange({
+            binId: binId,
             current: bin,
             prev: this.prev
           })
