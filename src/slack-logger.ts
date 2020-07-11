@@ -87,8 +87,23 @@ export class SlackLogger implements TraitSlackLogger {
     text: string
     threadTs: Option<string>
   }): string {
-    // eslint-disable-next-line @typescript-eslint/naming-convention
-    const thread_ts: Record<string, string> = pipe(
+    /**
+     * If sending as `as_user: false,` Its response becomes the invalid_arguments error
+     *
+     * ```
+     * {
+     *   "ok": false,
+     *   "error": "invalid_arguments",
+     *   "deprecated_argument": "as_user"
+     * }
+     * ```
+     */
+    const asUserRecord: Record<string, string> = {}
+    if (asUser) {
+      asUserRecord.as_user = 'true'
+    }
+
+    const threadTsRecord: Record<string, string> = pipe(
       threadTs,
       fold(
         () => {
@@ -102,8 +117,8 @@ export class SlackLogger implements TraitSlackLogger {
 
     return JSON.stringify({
       channel: channelId,
-      as_user: asUser,
-      ...thread_ts,
+      ...asUserRecord,
+      ...threadTsRecord,
       blocks: [
         {
           type: 'section',
