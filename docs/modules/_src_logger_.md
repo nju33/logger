@@ -17,7 +17,7 @@
 
 * [FetchFn](_src_logger_.md#fetchfn)
 * [LoggerLogVo](_src_logger_.md#loggerlogvo)
-* [LoggerNextFunctiion](_src_logger_.md#loggernextfunctiion)
+* [LoggerNextFunction](_src_logger_.md#loggernextfunction)
 
 ### Functions
 
@@ -29,7 +29,7 @@
 
 Ƭ **FetchFn**: *typeof fetch*
 
-*Defined in [src/logger.ts:4](https://github.com/nju33/logger/blob/7022c1f/src/logger.ts#L4)*
+*Defined in [src/logger.ts:4](https://github.com/nju33/logger/blob/09b9025/src/logger.ts#L4)*
 
 ___
 
@@ -37,15 +37,15 @@ ___
 
 Ƭ **LoggerLogVo**: *[LoggerInfoLogVo](../interfaces/_src_logger_.loggerinfologvo.md) | [LoggerWarnLogVo](../interfaces/_src_logger_.loggerwarnlogvo.md) | [LoggerErrorLogVo](../interfaces/_src_logger_.loggererrorlogvo.md) | [LoggerCompleteLogVo](../interfaces/_src_logger_.loggercompletelogvo.md)*
 
-*Defined in [src/logger.ts:39](https://github.com/nju33/logger/blob/7022c1f/src/logger.ts#L39)*
+*Defined in [src/logger.ts:39](https://github.com/nju33/logger/blob/09b9025/src/logger.ts#L39)*
 
 ___
 
-###  LoggerNextFunctiion
+###  LoggerNextFunction
 
-Ƭ **LoggerNextFunctiion**: *function*
+Ƭ **LoggerNextFunction**: *function*
 
-*Defined in [src/logger.ts:45](https://github.com/nju33/logger/blob/7022c1f/src/logger.ts#L45)*
+*Defined in [src/logger.ts:45](https://github.com/nju33/logger/blob/09b9025/src/logger.ts#L45)*
 
 #### Type declaration:
 
@@ -63,7 +63,7 @@ Name | Type |
 
 ▸ **getEmojiFrom**(`log`: [LoggerLogVo](_src_logger_.md#loggerlogvo)): *string*
 
-*Defined in [src/logger.ts:66](https://github.com/nju33/logger/blob/7022c1f/src/logger.ts#L66)*
+*Defined in [src/logger.ts:66](https://github.com/nju33/logger/blob/09b9025/src/logger.ts#L66)*
 
 Returns the specific symbol
 

@@ -18,4 +18,4 @@
 
 • **history**: *[JsonbinLogRecordHistoryVo](../modules/_src_jsonbin_logger_.md#jsonbinlogrecordhistoryvo)[]*
 
-*Defined in [src/jsonbin-logger.ts:37](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-logger.ts#L37)*
+*Defined in [src/jsonbin-logger.ts:37](https://github.com/nju33/logger/blob/09b9025/src/jsonbin-logger.ts#L37)*

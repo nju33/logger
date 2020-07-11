@@ -31,7 +31,7 @@
 
 \+ **new SlackLogger**(`fetch`: [FetchFn](../modules/_src_logger_.md#fetchfn)): *[SlackLogger](_src_slack_logger_.slacklogger.md)*
 
-*Defined in [src/slack-logger.ts:134](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L134)*
+*Defined in [src/slack-logger.ts:149](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L149)*
 
 **Parameters:**
 
@@ -47,15 +47,15 @@ Name | Type |
 
 • **fetch**: *[FetchFn](../modules/_src_logger_.md#fetchfn)*
 
-*Defined in [src/slack-logger.ts:136](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L136)*
+*Defined in [src/slack-logger.ts:151](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L151)*
 
 ## Methods
 
 ###  createSession
 
-▸ **createSession**(`__namedParameters`: object): *Generator‹[SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), [SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), boolean | undefined›*
+▸ **createSession**(`__namedParameters`: object): *Generator‹[SlackLoggerNextFunction](../modules/_src_slack_logger_.md#slackloggernextfunction), [SlackLoggerNextFunction](../modules/_src_slack_logger_.md#slackloggernextfunction), boolean | undefined›*
 
-*Defined in [src/slack-logger.ts:138](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L138)*
+*Defined in [src/slack-logger.ts:153](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L153)*
 
 **Parameters:**
 
@@ -67,7 +67,7 @@ Name | Type |
 `channelId` | string |
 `rest` | rest |
 
-**Returns:** *Generator‹[SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), [SlackLoggerNextFunctiion](../modules/_src_slack_logger_.md#slackloggernextfunctiion), boolean | undefined›*
+**Returns:** *Generator‹[SlackLoggerNextFunction](../modules/_src_slack_logger_.md#slackloggernextfunction), [SlackLoggerNextFunction](../modules/_src_slack_logger_.md#slackloggernextfunction), boolean | undefined›*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **createBody**(`__namedParameters`: object): *string*
 
-*Defined in [src/slack-logger.ts:77](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L77)*
+*Defined in [src/slack-logger.ts:77](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L77)*
 
 **Parameters:**
 

@@ -26,15 +26,15 @@
 
 Ƭ **JsonbinLogRecordHistoryVo**: *[LoggerLogVo](_src_logger_.md#loggerlogvo) & [JsonbinLogVo](../interfaces/_src_jsonbin_logger_.jsonbinlogvo.md)*
 
-*Defined in [src/jsonbin-logger.ts:34](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-logger.ts#L34)*
+*Defined in [src/jsonbin-logger.ts:34](https://github.com/nju33/logger/blob/09b9025/src/jsonbin-logger.ts#L34)*
 
 ___
 
 ###  JsonbinLoggerNextFunction
 
-Ƭ **JsonbinLoggerNextFunction**: *[LoggerNextFunctiion](_src_logger_.md#loggernextfunctiion)‹Either‹HttpError | TypeError, PostResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)› | PutResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)›››*
+Ƭ **JsonbinLoggerNextFunction**: *[LoggerNextFunction](_src_logger_.md#loggernextfunction)‹Either‹HttpError | TypeError, PostResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)› | PutResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)›››*
 
-*Defined in [src/jsonbin-logger.ts:40](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-logger.ts#L40)*
+*Defined in [src/jsonbin-logger.ts:40](https://github.com/nju33/logger/blob/09b9025/src/jsonbin-logger.ts#L40)*
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 Ƭ **TraitJsonbinLogger**: *[TraitLogger](../interfaces/_src_logger_.traitlogger.md)‹[JsonbinLoggerContext](../interfaces/_src_jsonbin_logger_.jsonbinloggercontext.md), Either‹HttpError | TypeError, PostResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)› | PutResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)›››*
 
-*Defined in [src/jsonbin-logger.ts:22](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-logger.ts#L22)*
+*Defined in [src/jsonbin-logger.ts:22](https://github.com/nju33/logger/blob/09b9025/src/jsonbin-logger.ts#L22)*

@@ -29,11 +29,11 @@
 
 • **createSession**: *function*
 
-*Defined in [src/logger.ts:53](https://github.com/nju33/logger/blob/7022c1f/src/logger.ts#L53)*
+*Defined in [src/logger.ts:53](https://github.com/nju33/logger/blob/09b9025/src/logger.ts#L53)*
 
 #### Type declaration:
 
-▸ (`context`: Context): *Generator‹[LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion)‹LoggerNextFunctionResult›, [LoggerNextFunctiion](../modules/_src_logger_.md#loggernextfunctiion)‹LoggerNextFunctionResult›, boolean | undefined›*
+▸ (`context`: Context): *Generator‹[LoggerNextFunction](../modules/_src_logger_.md#loggernextfunction)‹LoggerNextFunctionResult›, [LoggerNextFunction](../modules/_src_logger_.md#loggernextfunction)‹LoggerNextFunctionResult›, boolean | undefined›*
 
 **Parameters:**
 

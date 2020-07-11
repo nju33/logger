@@ -21,7 +21,7 @@
 * [LoggerInfoLogVo](_src_index_.md#loggerinfologvo)
 * [LoggerLogCommonVo](_src_index_.md#loggerlogcommonvo)
 * [LoggerLogVo](_src_index_.md#loggerlogvo)
-* [LoggerNextFunctiion](_src_index_.md#loggernextfunctiion)
+* [LoggerNextFunction](_src_index_.md#loggernextfunction)
 * [LoggerWarnLogVo](_src_index_.md#loggerwarnlogvo)
 * [PostMessageResultAsBotVo](_src_index_.md#postmessageresultasbotvo)
 * [PostMessageResultVo](_src_index_.md#postmessageresultvo)
@@ -29,7 +29,7 @@
 * [SLACK_LOGGER_POST_URL](_src_index_.md#slack_logger_post_url)
 * [SlackLogger](_src_index_.md#slacklogger)
 * [SlackLoggerContext](_src_index_.md#slackloggercontext)
-* [SlackLoggerNextFunctiion](_src_index_.md#slackloggernextfunctiion)
+* [SlackLoggerNextFunction](_src_index_.md#slackloggernextfunction)
 * [TraitJsonbinLogObserver](_src_index_.md#traitjsonbinlogobserver)
 * [TraitJsonbinLogger](_src_index_.md#traitjsonbinlogger)
 * [TraitLogger](_src_index_.md#traitlogger)
@@ -128,9 +128,9 @@ ___
 
 ___
 
-###  LoggerNextFunctiion
+###  LoggerNextFunction
 
-• **LoggerNextFunctiion**:
+• **LoggerNextFunction**:
 
 ___
 
@@ -176,9 +176,9 @@ ___
 
 ___
 
-###  SlackLoggerNextFunctiion
+###  SlackLoggerNextFunction
 
-• **SlackLoggerNextFunctiion**:
+• **SlackLoggerNextFunction**:
 
 ___
 

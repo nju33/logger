@@ -17,7 +17,7 @@
 ### Type aliases
 
 * [PostMessageResultVo](_src_slack_logger_.md#postmessageresultvo)
-* [SlackLoggerNextFunctiion](_src_slack_logger_.md#slackloggernextfunctiion)
+* [SlackLoggerNextFunction](_src_slack_logger_.md#slackloggernextfunction)
 * [TraitSlackLogger](_src_slack_logger_.md#traitslacklogger)
 
 ### Variables
@@ -30,15 +30,15 @@
 
 Ƭ **PostMessageResultVo**: *[PostMessageResultAsBotVo](../interfaces/_src_slack_logger_.postmessageresultasbotvo.md) | [PostMesssageResultAsUserVo](../interfaces/_src_slack_logger_.postmesssageresultasuservo.md)*
 
-*Defined in [src/slack-logger.ts:63](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L63)*
+*Defined in [src/slack-logger.ts:63](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L63)*
 
 ___
 
-###  SlackLoggerNextFunctiion
+###  SlackLoggerNextFunction
 
-Ƭ **SlackLoggerNextFunctiion**: *[LoggerNextFunctiion](_src_logger_.md#loggernextfunctiion)‹Either‹HttpError | TypeError, [PostMessageResultVo](_src_slack_logger_.md#postmessageresultvo)››*
+Ƭ **SlackLoggerNextFunction**: *[LoggerNextFunction](_src_logger_.md#loggernextfunction)‹Either‹HttpError | TypeError, [PostMessageResultVo](_src_slack_logger_.md#postmessageresultvo)››*
 
-*Defined in [src/slack-logger.ts:67](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L67)*
+*Defined in [src/slack-logger.ts:67](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L67)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 Ƭ **TraitSlackLogger**: *[TraitLogger](../interfaces/_src_logger_.traitlogger.md)‹[SlackLoggerContext](../interfaces/_src_slack_logger_.slackloggercontext.md), Either‹HttpError | TypeError, [PostMessageResultVo](_src_slack_logger_.md#postmessageresultvo)››*
 
-*Defined in [src/slack-logger.ts:71](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L71)*
+*Defined in [src/slack-logger.ts:71](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L71)*
 
 ## Variables
 
@@ -54,4 +54,4 @@ ___
 
 • **SLACK_LOGGER_POST_URL**: *"https://slack.com/api/chat.postMessage"* = "https://slack.com/api/chat.postMessage"
 
-*Defined in [src/slack-logger.ts:20](https://github.com/nju33/logger/blob/7022c1f/src/slack-logger.ts#L20)*
+*Defined in [src/slack-logger.ts:20](https://github.com/nju33/logger/blob/09b9025/src/slack-logger.ts#L20)*
