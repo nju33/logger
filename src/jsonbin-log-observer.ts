@@ -17,7 +17,7 @@ export type JsonBinLogObserverOnChange = (entry: {
 
 export type TraitJsonbinLogObserver = TraitObserver<JsonbinLogObserverContext>
 
-export class JsonbinLogObservre implements TraitJsonbinLogObserver {
+export class JsonbinLogObserver implements TraitJsonbinLogObserver {
   private readonly bin: TraitBin
   private readonly keys: Readonly<Set<string>>
   private prev: Option<GetResultBin<JsonBinLogRecordVo>>

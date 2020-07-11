@@ -1,6 +1,6 @@
 import * as O from 'fp-ts/lib/Option'
 import {
-  JsonbinLogObservre,
+  JsonbinLogObserver,
   TraitJsonbinLogObserver
 } from './jsonbin-log-observer'
 
@@ -23,7 +23,7 @@ describe('JsonbiinLogObserver', () => {
     })
     onChange = jest.fn()
 
-    observer = new JsonbinLogObservre(fetch, onChange)
+    observer = new JsonbinLogObserver(fetch, onChange)
   })
 
   test('observe', async () => {
