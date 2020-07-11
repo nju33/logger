@@ -65,7 +65,6 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
-        as_user: false,
         blocks: [
           {
             type: 'section',
@@ -101,7 +100,6 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
-        as_user: false,
         thread_ts: '0000000000',
         blocks: [
           {
@@ -138,7 +136,6 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
-        as_user: false,
         thread_ts: '0000000000',
         blocks: [
           {
@@ -175,7 +172,6 @@ describe('SlackLogger', () => {
       },
       body: JSON.stringify({
         channel: 'channelId',
-        as_user: false,
         thread_ts: '0000000000',
         blocks: [
           {
