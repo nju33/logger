@@ -11,8 +11,8 @@
 * [JsonBinLogRecordHistoryVo](_src_index_.md#jsonbinlogrecordhistoryvo)
 * [JsonBinLogRecordVo](_src_index_.md#jsonbinlogrecordvo)
 * [JsonBinLogVo](_src_index_.md#jsonbinlogvo)
+* [JsonbinLogObserver](_src_index_.md#jsonbinlogobserver)
 * [JsonbinLogObserverContext](_src_index_.md#jsonbinlogobservercontext)
-* [JsonbinLogObservre](_src_index_.md#jsonbinlogobservre)
 * [JsonbinLogger](_src_index_.md#jsonbinlogger)
 * [JsonbinLoggerContext](_src_index_.md#jsonbinloggercontext)
 * [JsonbinLoggerNextFunction](_src_index_.md#jsonbinloggernextfunction)
@@ -68,15 +68,15 @@ ___
 
 ___
 
-###  JsonbinLogObserverContext
+###  JsonbinLogObserver
 
-• **JsonbinLogObserverContext**:
+• **JsonbinLogObserver**:
 
 ___
 
-###  JsonbinLogObservre
+###  JsonbinLogObserverContext
 
-• **JsonbinLogObservre**:
+• **JsonbinLogObserverContext**:
 
 ___
 

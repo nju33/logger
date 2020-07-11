@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [JsonbinLogObservre](../classes/_src_jsonbin_log_observer_.jsonbinlogobservre.md)
+* [JsonbinLogObserver](../classes/_src_jsonbin_log_observer_.jsonbinlogobserver.md)
 
 ### Interfaces
 
@@ -23,7 +23,7 @@
 
 Ƭ **JsonBinLogObserverOnChange**: *function*
 
-*Defined in [src/jsonbin-log-observer.ts:13](https://github.com/nju33/logger/blob/90e4448/src/jsonbin-log-observer.ts#L13)*
+*Defined in [src/jsonbin-log-observer.ts:13](https://github.com/nju33/logger/blob/54eead8/src/jsonbin-log-observer.ts#L13)*
 
 #### Type declaration:
 
@@ -44,4 +44,4 @@ ___
 
 Ƭ **TraitJsonbinLogObserver**: *[TraitObserver](../interfaces/_src_observer_.traitobserver.md)‹[JsonbinLogObserverContext](../interfaces/_src_jsonbin_log_observer_.jsonbinlogobservercontext.md)›*
 
-*Defined in [src/jsonbin-log-observer.ts:18](https://github.com/nju33/logger/blob/90e4448/src/jsonbin-log-observer.ts#L18)*
+*Defined in [src/jsonbin-log-observer.ts:18](https://github.com/nju33/logger/blob/54eead8/src/jsonbin-log-observer.ts#L18)*

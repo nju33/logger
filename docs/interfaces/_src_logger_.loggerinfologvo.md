@@ -24,7 +24,7 @@
 
 *Inherited from [LoggerLogCommonVo](_src_logger_.loggerlogcommonvo.md).[fields](_src_logger_.loggerlogcommonvo.md#optional-fields)*
 
-*Defined in [src/logger.ts:10](https://github.com/nju33/logger/blob/90e4448/src/logger.ts#L10)*
+*Defined in [src/logger.ts:10](https://github.com/nju33/logger/blob/54eead8/src/logger.ts#L10)*
 
 追加フィールド
 
@@ -36,7 +36,7 @@ ___
 
 *Inherited from [LoggerLogCommonVo](_src_logger_.loggerlogcommonvo.md).[message](_src_logger_.loggerlogcommonvo.md#message)*
 
-*Defined in [src/logger.ts:14](https://github.com/nju33/logger/blob/90e4448/src/logger.ts#L14)*
+*Defined in [src/logger.ts:14](https://github.com/nju33/logger/blob/54eead8/src/logger.ts#L14)*
 
 メインメッセージ
 
@@ -46,4 +46,4 @@ ___
 
 • **type**: *"info"*
 
-*Defined in [src/logger.ts:18](https://github.com/nju33/logger/blob/90e4448/src/logger.ts#L18)*
+*Defined in [src/logger.ts:18](https://github.com/nju33/logger/blob/54eead8/src/logger.ts#L18)*

@@ -12,7 +12,7 @@
 
 ## Implemented by
 
-* [JsonbinLogObservre](../classes/_src_jsonbin_log_observer_.jsonbinlogobservre.md)
+* [JsonbinLogObserver](../classes/_src_jsonbin_log_observer_.jsonbinlogobserver.md)
 
 ## Index
 
@@ -28,7 +28,7 @@
 
 • **disconnect**: *function*
 
-*Defined in [src/observer.ts:2](https://github.com/nju33/logger/blob/90e4448/src/observer.ts#L2)*
+*Defined in [src/observer.ts:2](https://github.com/nju33/logger/blob/54eead8/src/observer.ts#L2)*
 
 #### Type declaration:
 
@@ -40,7 +40,7 @@ ___
 
 • **observe**: *function*
 
-*Defined in [src/observer.ts:3](https://github.com/nju33/logger/blob/90e4448/src/observer.ts#L3)*
+*Defined in [src/observer.ts:3](https://github.com/nju33/logger/blob/54eead8/src/observer.ts#L3)*
 
 #### Type declaration:
 
@@ -60,7 +60,7 @@ ___
 
 • **unobserve**: *function*
 
-*Defined in [src/observer.ts:8](https://github.com/nju33/logger/blob/90e4448/src/observer.ts#L8)*
+*Defined in [src/observer.ts:8](https://github.com/nju33/logger/blob/54eead8/src/observer.ts#L8)*
 
 #### Type declaration:
 
