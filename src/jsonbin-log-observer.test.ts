@@ -34,6 +34,7 @@ describe('JsonbiinLogObserver', () => {
 
     setImmediate(() => {
       expect(onChange).toHaveBeenCalledWith({
+        binId: 'key',
         prev: O.none,
         current: bin
       })
