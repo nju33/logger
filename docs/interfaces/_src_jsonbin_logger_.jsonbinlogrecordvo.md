@@ -1,10 +1,10 @@
-[@nju33/logger](../README.md) › [Globals](../globals.md) › ["src/jsonbin-logger"](../modules/_src_jsonbin_logger_.md) › [JsonBinLogRecordVo](_src_jsonbin_logger_.jsonbinlogrecordvo.md)
+[@nju33/logger](../README.md) › [Globals](../globals.md) › ["src/jsonbin-logger"](../modules/_src_jsonbin_logger_.md) › [JsonbinLogRecordVo](_src_jsonbin_logger_.jsonbinlogrecordvo.md)
 
-# Interface: JsonBinLogRecordVo
+# Interface: JsonbinLogRecordVo
 
 ## Hierarchy
 
-* **JsonBinLogRecordVo**
+* **JsonbinLogRecordVo**
 
 ## Index
 
@@ -16,6 +16,6 @@
 
 ###  history
 
-• **history**: *[JsonBinLogRecordHistoryVo](../modules/_src_jsonbin_logger_.md#jsonbinlogrecordhistoryvo)[]*
+• **history**: *[JsonbinLogRecordHistoryVo](../modules/_src_jsonbin_logger_.md#jsonbinlogrecordhistoryvo)[]*
 
-*Defined in [src/jsonbin-logger.ts:37](https://github.com/nju33/logger/blob/54eead8/src/jsonbin-logger.ts#L37)*
+*Defined in [src/jsonbin-logger.ts:37](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-logger.ts#L37)*

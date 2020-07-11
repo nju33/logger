@@ -7,12 +7,12 @@
 ### References
 
 * [FetchFn](_src_index_.md#fetchfn)
-* [JsonBinLogObserverOnChange](_src_index_.md#jsonbinlogobserveronchange)
-* [JsonBinLogRecordHistoryVo](_src_index_.md#jsonbinlogrecordhistoryvo)
-* [JsonBinLogRecordVo](_src_index_.md#jsonbinlogrecordvo)
-* [JsonBinLogVo](_src_index_.md#jsonbinlogvo)
 * [JsonbinLogObserver](_src_index_.md#jsonbinlogobserver)
 * [JsonbinLogObserverContext](_src_index_.md#jsonbinlogobservercontext)
+* [JsonbinLogObserverOnChange](_src_index_.md#jsonbinlogobserveronchange)
+* [JsonbinLogRecordHistoryVo](_src_index_.md#jsonbinlogrecordhistoryvo)
+* [JsonbinLogRecordVo](_src_index_.md#jsonbinlogrecordvo)
+* [JsonbinLogVo](_src_index_.md#jsonbinlogvo)
 * [JsonbinLogger](_src_index_.md#jsonbinlogger)
 * [JsonbinLoggerContext](_src_index_.md#jsonbinloggercontext)
 * [JsonbinLoggerNextFunction](_src_index_.md#jsonbinloggernextfunction)
@@ -30,8 +30,8 @@
 * [SlackLogger](_src_index_.md#slacklogger)
 * [SlackLoggerContext](_src_index_.md#slackloggercontext)
 * [SlackLoggerNextFunctiion](_src_index_.md#slackloggernextfunctiion)
-* [TraitJsonBinLogger](_src_index_.md#traitjsonbinlogger)
 * [TraitJsonbinLogObserver](_src_index_.md#traitjsonbinlogobserver)
+* [TraitJsonbinLogger](_src_index_.md#traitjsonbinlogger)
 * [TraitLogger](_src_index_.md#traitlogger)
 * [TraitSlackLogger](_src_index_.md#traitslacklogger)
 * [getEmojiFrom](_src_index_.md#getemojifrom)
@@ -44,30 +44,6 @@
 
 ___
 
-###  JsonBinLogObserverOnChange
-
-• **JsonBinLogObserverOnChange**:
-
-___
-
-###  JsonBinLogRecordHistoryVo
-
-• **JsonBinLogRecordHistoryVo**:
-
-___
-
-###  JsonBinLogRecordVo
-
-• **JsonBinLogRecordVo**:
-
-___
-
-###  JsonBinLogVo
-
-• **JsonBinLogVo**:
-
-___
-
 ###  JsonbinLogObserver
 
 • **JsonbinLogObserver**:
@@ -77,6 +53,30 @@ ___
 ###  JsonbinLogObserverContext
 
 • **JsonbinLogObserverContext**:
+
+___
+
+###  JsonbinLogObserverOnChange
+
+• **JsonbinLogObserverOnChange**:
+
+___
+
+###  JsonbinLogRecordHistoryVo
+
+• **JsonbinLogRecordHistoryVo**:
+
+___
+
+###  JsonbinLogRecordVo
+
+• **JsonbinLogRecordVo**:
+
+___
+
+###  JsonbinLogVo
+
+• **JsonbinLogVo**:
 
 ___
 
@@ -182,15 +182,15 @@ ___
 
 ___
 
-###  TraitJsonBinLogger
-
-• **TraitJsonBinLogger**:
-
-___
-
 ###  TraitJsonbinLogObserver
 
 • **TraitJsonbinLogObserver**:
+
+___
+
+###  TraitJsonbinLogger
+
+• **TraitJsonbinLogger**:
 
 ___
 

@@ -14,16 +14,16 @@
 
 ### Type aliases
 
-* [JsonBinLogObserverOnChange](_src_jsonbin_log_observer_.md#jsonbinlogobserveronchange)
+* [JsonbinLogObserverOnChange](_src_jsonbin_log_observer_.md#jsonbinlogobserveronchange)
 * [TraitJsonbinLogObserver](_src_jsonbin_log_observer_.md#traitjsonbinlogobserver)
 
 ## Type aliases
 
-###  JsonBinLogObserverOnChange
+###  JsonbinLogObserverOnChange
 
-Ƭ **JsonBinLogObserverOnChange**: *function*
+Ƭ **JsonbinLogObserverOnChange**: *function*
 
-*Defined in [src/jsonbin-log-observer.ts:13](https://github.com/nju33/logger/blob/54eead8/src/jsonbin-log-observer.ts#L13)*
+*Defined in [src/jsonbin-log-observer.ts:13](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-log-observer.ts#L13)*
 
 #### Type declaration:
 
@@ -35,8 +35,9 @@
 
 Name | Type |
 ------ | ------ |
-`current` | GetResultBin‹[JsonBinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)› |
-`prev` | Option‹GetResultBin‹[JsonBinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)›› |
+`binId` | string |
+`current` | GetResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)› |
+`prev` | Option‹GetResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)›› |
 
 ___
 
@@ -44,4 +45,4 @@ ___
 
 Ƭ **TraitJsonbinLogObserver**: *[TraitObserver](../interfaces/_src_observer_.traitobserver.md)‹[JsonbinLogObserverContext](../interfaces/_src_jsonbin_log_observer_.jsonbinlogobservercontext.md)›*
 
-*Defined in [src/jsonbin-log-observer.ts:18](https://github.com/nju33/logger/blob/54eead8/src/jsonbin-log-observer.ts#L18)*
+*Defined in [src/jsonbin-log-observer.ts:19](https://github.com/nju33/logger/blob/7022c1f/src/jsonbin-log-observer.ts#L19)*
