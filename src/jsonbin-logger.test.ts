@@ -1,5 +1,5 @@
 import * as E from 'fp-ts/lib/Either'
-import { JsonbinLogger, TraitJsonBinLogger } from './jsonbin-logger'
+import { JsonbinLogger, TraitJsonbinLogger } from './jsonbin-logger'
 
 describe('JsonbinLogger', () => {
   let fetch: jest.Mock
@@ -15,7 +15,7 @@ describe('JsonbinLogger', () => {
       })
     })
   }
-  let logger: TraitJsonBinLogger
+  let logger: TraitJsonbinLogger
 
   beforeEach(() => {
     resetFetch()

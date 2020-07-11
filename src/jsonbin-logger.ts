@@ -19,32 +19,32 @@ export interface JsonbinLoggerContext {
   secretKey: string
 }
 
-export type TraitJsonBinLogger = TraitLogger<
+export type TraitJsonbinLogger = TraitLogger<
   JsonbinLoggerContext,
   Either<
     HttpError | TypeError,
-    PostResultBin<JsonBinLogRecordVo> | PutResultBin<JsonBinLogRecordVo>
+    PostResultBin<JsonbinLogRecordVo> | PutResultBin<JsonbinLogRecordVo>
   >
 >
 
-export interface JsonBinLogVo {
+export interface JsonbinLogVo {
   emoji: string
 }
 
-export type JsonBinLogRecordHistoryVo = LoggerLogVo & JsonBinLogVo
+export type JsonbinLogRecordHistoryVo = LoggerLogVo & JsonbinLogVo
 
-export interface JsonBinLogRecordVo {
-  history: JsonBinLogRecordHistoryVo[]
+export interface JsonbinLogRecordVo {
+  history: JsonbinLogRecordHistoryVo[]
 }
 
 export type JsonbinLoggerNextFunction = LoggerNextFunctiion<
   Either<
     HttpError | TypeError,
-    PostResultBin<JsonBinLogRecordVo> | PutResultBin<JsonBinLogRecordVo>
+    PostResultBin<JsonbinLogRecordVo> | PutResultBin<JsonbinLogRecordVo>
   >
 >
 
-export class JsonbinLogger implements TraitJsonBinLogger {
+export class JsonbinLogger implements TraitJsonbinLogger {
   bin: TraitBin
 
   constructor(fetch: FetchFn) {
@@ -73,12 +73,12 @@ export class JsonbinLogger implements TraitJsonBinLogger {
           string,
           TaskEither<
             HttpError | TypeError,
-            PostResultBin<JsonBinLogRecordVo> | PutResultBin<JsonBinLogRecordVo>
+            PostResultBin<JsonbinLogRecordVo> | PutResultBin<JsonbinLogRecordVo>
           >
         >(
           () => {
             return pipe(
-              this.bin.post<JsonBinLogRecordVo>({
+              this.bin.post<JsonbinLogRecordVo>({
                 binPrivate,
                 collectionId,
                 secretKey,
@@ -104,7 +104,7 @@ export class JsonbinLogger implements TraitJsonBinLogger {
           },
           (id) => {
             return pipe(
-              this.bin.update<JsonBinLogRecordVo>(
+              this.bin.update<JsonbinLogRecordVo>(
                 {
                   id,
                   secretKey

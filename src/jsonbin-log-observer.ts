@@ -2,7 +2,7 @@ import { Bin, GetResultBin, TraitBin } from '@nju33/jsonbin-api'
 import { pipe } from 'fp-ts/lib/function'
 import { isNone, none, Option, some } from 'fp-ts/lib/Option'
 import { map } from 'fp-ts/lib/TaskEither'
-import { JsonBinLogRecordVo } from './jsonbin-logger'
+import { JsonbinLogRecordVo } from './jsonbin-logger'
 import { FetchFn } from './logger'
 import { TraitObserver } from './observer'
 
@@ -10,10 +10,10 @@ export interface JsonbinLogObserverContext {
   secretKey: string
 }
 
-export type JsonBinLogObserverOnChange = (entry: {
+export type JsonbinLogObserverOnChange = (entry: {
   binId: string
-  current: GetResultBin<JsonBinLogRecordVo>
-  prev: Option<GetResultBin<JsonBinLogRecordVo>>
+  current: GetResultBin<JsonbinLogRecordVo>
+  prev: Option<GetResultBin<JsonbinLogRecordVo>>
 }) => Promise<unknown>
 
 export type TraitJsonbinLogObserver = TraitObserver<JsonbinLogObserverContext>
@@ -21,11 +21,11 @@ export type TraitJsonbinLogObserver = TraitObserver<JsonbinLogObserverContext>
 export class JsonbinLogObserver implements TraitJsonbinLogObserver {
   private readonly bin: TraitBin
   private readonly keys: Readonly<Set<string>>
-  private prev: Option<GetResultBin<JsonBinLogRecordVo>>
+  private prev: Option<GetResultBin<JsonbinLogRecordVo>>
 
   constructor(
     fetch: FetchFn,
-    private readonly onChange: JsonBinLogObserverOnChange
+    private readonly onChange: JsonbinLogObserverOnChange
   ) {
     this.bin = new Bin(fetch)
     this.keys = new Set()
@@ -42,7 +42,7 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
     }
 
     await pipe(
-      this.bin.get<JsonBinLogRecordVo>({
+      this.bin.get<JsonbinLogRecordVo>({
         id: binId,
         secretKey
       }),
