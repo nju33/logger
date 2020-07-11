@@ -18,4 +18,4 @@
 
 • **emoji**: *string*
 
-*Defined in [src/jsonbin-logger.ts:31](https://github.com/nju33/logger/blob/09b9025/src/jsonbin-logger.ts#L31)*
+*Defined in [src/jsonbin-logger.ts:31](https://github.com/nju33/logger/blob/2f39b9a/src/jsonbin-logger.ts#L31)*
