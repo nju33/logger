@@ -30,12 +30,6 @@ export interface LoggerCompleteLogVo extends LoggerLogCommonVo {
   type: 'complete'
 }
 
-// export interface LoggerContext {
-//   accessToken: string
-//   channelId: string
-//   partialFields?: Record<string, string>
-// }
-
 export type LoggerLogVo =
   | LoggerInfoLogVo
   | LoggerWarnLogVo
