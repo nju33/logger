@@ -14,10 +14,10 @@
 
 ### ▪ **divider**: *object*
 
-*Defined in [src/slack-logger.test.ts:7](https://github.com/nju33/logger/blob/2f39b9a/src/slack-logger.test.ts#L7)*
+*Defined in [src/slack-logger.test.ts:7](https://github.com/nju33/logger/blob/67e1dd4/src/slack-logger.test.ts#L7)*
 
 ###  type
 
 • **type**: *string* = "divider"
 
-*Defined in [src/slack-logger.test.ts:8](https://github.com/nju33/logger/blob/2f39b9a/src/slack-logger.test.ts#L8)*
+*Defined in [src/slack-logger.test.ts:8](https://github.com/nju33/logger/blob/67e1dd4/src/slack-logger.test.ts#L8)*

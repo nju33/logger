@@ -10,6 +10,7 @@
 
 ### Properties
 
+* [binId](_src_jsonbin_logger_.jsonbinloggercontext.md#optional-binid)
 * [binPrivate](_src_jsonbin_logger_.jsonbinloggercontext.md#optional-binprivate)
 * [collectionId](_src_jsonbin_logger_.jsonbinloggercontext.md#optional-collectionid)
 * [partialFields](_src_jsonbin_logger_.jsonbinloggercontext.md#optional-partialfields)
@@ -17,11 +18,19 @@
 
 ## Properties
 
+### `Optional` binId
+
+• **binId**? : *undefined | string*
+
+*Defined in [src/jsonbin-logger.ts:16](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-logger.ts#L16)*
+
+___
+
 ### `Optional` binPrivate
 
 • **binPrivate**? : *undefined | false | true*
 
-*Defined in [src/jsonbin-logger.ts:16](https://github.com/nju33/logger/blob/2f39b9a/src/jsonbin-logger.ts#L16)*
+*Defined in [src/jsonbin-logger.ts:17](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-logger.ts#L17)*
 
 ___
 
@@ -29,7 +38,7 @@ ___
 
 • **collectionId**? : *undefined | string*
 
-*Defined in [src/jsonbin-logger.ts:17](https://github.com/nju33/logger/blob/2f39b9a/src/jsonbin-logger.ts#L17)*
+*Defined in [src/jsonbin-logger.ts:18](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-logger.ts#L18)*
 
 ___
 
@@ -37,7 +46,7 @@ ___
 
 • **partialFields**? : *Record‹string, string›*
 
-*Defined in [src/jsonbin-logger.ts:18](https://github.com/nju33/logger/blob/2f39b9a/src/jsonbin-logger.ts#L18)*
+*Defined in [src/jsonbin-logger.ts:19](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-logger.ts#L19)*
 
 ___
 
@@ -45,4 +54,4 @@ ___
 
 • **secretKey**: *string*
 
-*Defined in [src/jsonbin-logger.ts:19](https://github.com/nju33/logger/blob/2f39b9a/src/jsonbin-logger.ts#L19)*
+*Defined in [src/jsonbin-logger.ts:20](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-logger.ts#L20)*

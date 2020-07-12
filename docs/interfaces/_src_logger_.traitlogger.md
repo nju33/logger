@@ -29,7 +29,7 @@
 
 • **createSession**: *function*
 
-*Defined in [src/logger.ts:53](https://github.com/nju33/logger/blob/2f39b9a/src/logger.ts#L53)*
+*Defined in [src/logger.ts:53](https://github.com/nju33/logger/blob/67e1dd4/src/logger.ts#L53)*
 
 #### Type declaration:
 
