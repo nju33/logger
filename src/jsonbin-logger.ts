@@ -1,7 +1,7 @@
 import { Bin, PostResultBin, PutResultBin, TraitBin } from '@nju33/jsonbin-api'
 import { Either } from 'fp-ts/lib/Either'
 import { pipe } from 'fp-ts/lib/function'
-import { fold, isNone, none, Option, some } from 'fp-ts/lib/Option'
+import { fold, fromNullable, isNone, Option, some } from 'fp-ts/lib/Option'
 import { map, TaskEither } from 'fp-ts/lib/TaskEither'
 import { HttpError } from 'http-errors'
 import {
@@ -13,6 +13,7 @@ import {
 } from './logger'
 
 export interface JsonbinLoggerContext {
+  binId?: string
   binPrivate?: boolean
   collectionId?: string
   partialFields?: Record<string, string>
@@ -62,8 +63,8 @@ export class JsonbinLogger implements TraitJsonbinLogger {
     boolean | undefined
   > {
     const partialFields = rest.partialFields ?? {}
+    let binId: Option<string> = fromNullable(rest.binId)
 
-    let binId: Option<string> = none
     const postMessage: JsonbinLoggerNextFunction = async (log) => {
       const emoji = getEmojiFrom(log)
 
