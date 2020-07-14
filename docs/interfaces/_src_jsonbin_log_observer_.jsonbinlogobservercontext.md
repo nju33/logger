@@ -18,4 +18,4 @@
 
 • **secretKey**: *string*
 
-*Defined in [src/jsonbin-log-observer.ts:10](https://github.com/nju33/logger/blob/1e8320c/src/jsonbin-log-observer.ts#L10)*
+*Defined in [src/jsonbin-log-observer.ts:10](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L10)*
