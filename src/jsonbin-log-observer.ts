@@ -37,45 +37,47 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
     intervalMsec: number,
     { secretKey }: JsonbinLogObserverContext
   ): AsyncGenerator<void, void, void> {
-    if (!this.keys.has(binId)) {
-      return
-    }
+    while (true) {
+      if (!this.keys.has(binId)) {
+        return
+      }
 
-    await pipe(
-      this.bin.get<JsonbinLogRecordVo>({
-        id: binId,
-        secretKey
-      }),
-      map((bin) => {
-        if (isNone(this.prev)) {
-          this.prev = some(bin)
+      await pipe(
+        this.bin.get<JsonbinLogRecordVo>({
+          id: binId,
+          secretKey
+        }),
+        map((bin) => {
+          if (isNone(this.prev)) {
+            this.prev = some(bin)
 
-          // eslint-disable-next-line no-void
-          void this.onChange({
-            binId: binId,
-            current: bin,
-            prev: this.prev
-          })
-        } else if (
-          this.prev.value.record.history.length < bin.record.history.length
-        ) {
-          // eslint-disable-next-line no-void
-          void this.onChange({
-            binId: binId,
-            current: bin,
-            prev: this.prev
-          })
+            // eslint-disable-next-line no-void
+            void this.onChange({
+              binId: binId,
+              current: bin,
+              prev: this.prev
+            })
+          } else if (
+            this.prev.value.record.history.length < bin.record.history.length
+          ) {
+            // eslint-disable-next-line no-void
+            void this.onChange({
+              binId: binId,
+              current: bin,
+              prev: this.prev
+            })
 
-          this.prev = some(bin)
-        }
+            this.prev = some(bin)
+          }
+        })
+      )()
+
+      await new Promise((resolve) => {
+        setTimeout(resolve, intervalMsec)
       })
-    )()
 
-    await new Promise((resolve) => {
-      setTimeout(resolve, intervalMsec)
-    })
-
-    yield
+      yield
+    }
   }
 
   async observe(
@@ -91,6 +93,7 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
       intervalMsec,
       context
     )) {
+      console.log(_)
     }
   }
 
