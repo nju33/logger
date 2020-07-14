@@ -109,9 +109,11 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
 
   unobserve(binId: string): void {
     this.keys.delete(binId)
+    this.prev = none
   }
 
   disconnect(): void {
     this.keys.clear()
+    this.prev = none
   }
 }
