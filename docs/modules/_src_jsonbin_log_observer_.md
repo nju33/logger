@@ -23,7 +23,7 @@
 
 Ƭ **JsonbinLogObserverOnChange**: *function*
 
-*Defined in [src/jsonbin-log-observer.ts:13](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-log-observer.ts#L13)*
+*Defined in [src/jsonbin-log-observer.ts:13](https://github.com/nju33/logger/blob/1e8320c/src/jsonbin-log-observer.ts#L13)*
 
 #### Type declaration:
 
@@ -45,4 +45,4 @@ ___
 
 Ƭ **TraitJsonbinLogObserver**: *[TraitObserver](../interfaces/_src_observer_.traitobserver.md)‹[JsonbinLogObserverContext](../interfaces/_src_jsonbin_log_observer_.jsonbinlogobservercontext.md)›*
 
-*Defined in [src/jsonbin-log-observer.ts:19](https://github.com/nju33/logger/blob/67e1dd4/src/jsonbin-log-observer.ts#L19)*
+*Defined in [src/jsonbin-log-observer.ts:19](https://github.com/nju33/logger/blob/1e8320c/src/jsonbin-log-observer.ts#L19)*
