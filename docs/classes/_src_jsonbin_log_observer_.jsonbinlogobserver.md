@@ -36,7 +36,7 @@
 
 \+ **new JsonbinLogObserver**(`fetch`: [FetchFn](../modules/_src_logger_.md#fetchfn), `onChange`: [JsonbinLogObserverOnChange](../modules/_src_jsonbin_log_observer_.md#jsonbinlogobserveronchange)): *[JsonbinLogObserver](_src_jsonbin_log_observer_.jsonbinlogobserver.md)*
 
-*Defined in [src/jsonbin-log-observer.ts:24](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L24)*
+*Defined in [src/jsonbin-log-observer.ts:24](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L24)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 • **bin**: *TraitBin*
 
-*Defined in [src/jsonbin-log-observer.ts:22](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L22)*
+*Defined in [src/jsonbin-log-observer.ts:22](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L22)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **keys**: *Readonly‹Set‹string››*
 
-*Defined in [src/jsonbin-log-observer.ts:23](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L23)*
+*Defined in [src/jsonbin-log-observer.ts:23](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L23)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **onChange**: *[JsonbinLogObserverOnChange](../modules/_src_jsonbin_log_observer_.md#jsonbinlogobserveronchange)*
 
-*Defined in [src/jsonbin-log-observer.ts:28](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L28)*
+*Defined in [src/jsonbin-log-observer.ts:28](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L28)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 • **prev**: *Option‹GetResultBin‹[JsonbinLogRecordVo](../interfaces/_src_jsonbin_logger_.jsonbinlogrecordvo.md)››*
 
-*Defined in [src/jsonbin-log-observer.ts:24](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L24)*
+*Defined in [src/jsonbin-log-observer.ts:24](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L24)*
 
 ## Methods
 
@@ -85,7 +85,7 @@ ___
 
 ▸ **createPeriodicallyProcess**(`binId`: string, `intervalMsec`: number, `__namedParameters`: object): *AsyncGenerator‹void, void, void›*
 
-*Defined in [src/jsonbin-log-observer.ts:35](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L35)*
+*Defined in [src/jsonbin-log-observer.ts:35](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L35)*
 
 **Parameters:**
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **disconnect**(): *void*
 
-*Defined in [src/jsonbin-log-observer.ts:103](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L103)*
+*Defined in [src/jsonbin-log-observer.ts:103](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L103)*
 
 **Returns:** *void*
 
@@ -117,7 +117,7 @@ ___
 
 ▸ **observe**(`binId`: string, `intervalMsec`: number, `context`: [JsonbinLogObserverContext](../interfaces/_src_jsonbin_log_observer_.jsonbinlogobservercontext.md)): *Promise‹void›*
 
-*Defined in [src/jsonbin-log-observer.ts:83](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L83)*
+*Defined in [src/jsonbin-log-observer.ts:83](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L83)*
 
 **Parameters:**
 
@@ -135,7 +135,7 @@ ___
 
 ▸ **unobserve**(`binId`: string): *void*
 
-*Defined in [src/jsonbin-log-observer.ts:99](https://github.com/nju33/logger/blob/9b2a4b5/src/jsonbin-log-observer.ts#L99)*
+*Defined in [src/jsonbin-log-observer.ts:99](https://github.com/nju33/logger/blob/4fb201c/src/jsonbin-log-observer.ts#L99)*
 
 **Parameters:**
 
