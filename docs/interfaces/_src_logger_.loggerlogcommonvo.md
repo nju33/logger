@@ -27,7 +27,7 @@
 
 • **fields**? : *Record‹string, string›*
 
-*Defined in [src/logger.ts:10](https://github.com/nju33/logger/blob/ae39cd9/src/logger.ts#L10)*
+*Defined in [src/logger.ts:10](https://github.com/nju33/logger/blob/2cda14a/src/logger.ts#L10)*
 
 追加フィールド
 
@@ -37,6 +37,6 @@ ___
 
 • **message**: *string*
 
-*Defined in [src/logger.ts:14](https://github.com/nju33/logger/blob/ae39cd9/src/logger.ts#L14)*
+*Defined in [src/logger.ts:14](https://github.com/nju33/logger/blob/2cda14a/src/logger.ts#L14)*
 
 メインメッセージ
