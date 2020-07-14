@@ -87,13 +87,24 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
   ): Promise<void> {
     this.keys.add(binId)
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    for await (const _ of this.createPeriodicallyProcess(
-      binId,
-      intervalMsec,
-      context
-    )) {
+    const process = this.createPeriodicallyProcess(binId, intervalMsec, context)
+    let next = await process.next()
+    while (!(typeof next.done === 'boolean' && next.done)) {
+      next = await process.next()
     }
+    /**
+     * 以下は commonjs 化し、`regenerator-runtime`と共に使うと
+     * 以下のエラーを引き起こす
+     *
+     * "FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed
+     *   - JavaScript heap out of memory"
+     */
+    // for await (const _ of this.createPeriodicallyProcess(
+    //   binId,
+    //   intervalMsec,
+    //   context
+    // )) {
+    // }
   }
 
   unobserve(binId: string): void {
