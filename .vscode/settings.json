@@ -17,6 +17,28 @@
     "titleBar.inactiveBackground": "#21212199",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/.vercel": true,
+    "**/coverage": true,
+    "**/out": true,
+    "**/docs": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.next": true,
+    "**/.vercel": true,
+    "**/coverage": true,
+    "**/out": true,
+    "**/docs": true
+  },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
