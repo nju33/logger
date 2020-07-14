@@ -29,7 +29,7 @@
 
 Ƭ **FetchFn**: *typeof fetch*
 
-*Defined in [src/logger.ts:4](https://github.com/nju33/logger/blob/4fb201c/src/logger.ts#L4)*
+*Defined in [src/logger.ts:4](https://github.com/nju33/logger/blob/ae39cd9/src/logger.ts#L4)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 Ƭ **LoggerLogVo**: *[LoggerInfoLogVo](../interfaces/_src_logger_.loggerinfologvo.md) | [LoggerWarnLogVo](../interfaces/_src_logger_.loggerwarnlogvo.md) | [LoggerErrorLogVo](../interfaces/_src_logger_.loggererrorlogvo.md) | [LoggerCompleteLogVo](../interfaces/_src_logger_.loggercompletelogvo.md)*
 
-*Defined in [src/logger.ts:33](https://github.com/nju33/logger/blob/4fb201c/src/logger.ts#L33)*
+*Defined in [src/logger.ts:33](https://github.com/nju33/logger/blob/ae39cd9/src/logger.ts#L33)*
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 Ƭ **LoggerNextFunction**: *function*
 
-*Defined in [src/logger.ts:39](https://github.com/nju33/logger/blob/4fb201c/src/logger.ts#L39)*
+*Defined in [src/logger.ts:39](https://github.com/nju33/logger/blob/ae39cd9/src/logger.ts#L39)*
 
 #### Type declaration:
 
@@ -63,7 +63,7 @@ Name | Type |
 
 ▸ **getEmojiFrom**(`log`: [LoggerLogVo](_src_logger_.md#loggerlogvo)): *string*
 
-*Defined in [src/logger.ts:60](https://github.com/nju33/logger/blob/4fb201c/src/logger.ts#L60)*
+*Defined in [src/logger.ts:60](https://github.com/nju33/logger/blob/ae39cd9/src/logger.ts#L60)*
 
 Returns the specific symbol
 
