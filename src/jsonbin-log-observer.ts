@@ -93,7 +93,6 @@ export class JsonbinLogObserver implements TraitJsonbinLogObserver {
       intervalMsec,
       context
     )) {
-      console.log(_)
     }
   }
 
