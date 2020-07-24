@@ -41,7 +41,7 @@
     "lint-staged": "10.2.11",
     "microbundle": "0.12.3",
     "prettier": "2.0.5",
-    "textlint": "11.7.5",
+    "textlint": "11.7.6",
     "textlint-filter-rule-node-types": "1.0.1",
     "textlint-rule-preset-ja-spacing": "2.0.1",
     "textlint-rule-preset-ja-technical-writing": "4.0.0",
