@@ -37,7 +37,7 @@
     "fp-ts": "2.8.1",
     "husky": "4.2.5",
     "imagemin-lint-staged": "0.4.0",
-    "jest": "26.4.1",
+    "jest": "26.4.2",
     "lint-staged": "10.2.11",
     "microbundle": "0.12.3",
     "prettier": "2.0.5",
