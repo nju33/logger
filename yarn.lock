@@ -9593,10 +9593,12 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=
 
-textlint-filter-rule-node-types@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/textlint-filter-rule-node-types/-/textlint-filter-rule-node-types-1.0.1.tgz#d76e2c5f1729ba8e77bbf1387480f552dbcb6702"
-  integrity sha1-124sXxcpuo53u/E4dID1UtvLZwI=
+textlint-filter-rule-node-types@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/textlint-filter-rule-node-types/-/textlint-filter-rule-node-types-1.1.0.tgz#5fc1c3dac32b10540b312cff099722ad69d84187"
+  integrity sha512-KDJr7Fur/Gg8soghL7BXqd5D21EDV5YbN6rTSvvnh5RW8PSFXhCISBMyGFaUKPaPkGlxmwdplwvYuHZNRRy8wQ==
+  dependencies:
+    "@textlint/ast-node-types" "^4.3.4"
 
 textlint-rule-helper@2.0.1:
   version "2.0.1"
