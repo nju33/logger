@@ -42,7 +42,7 @@
     "microbundle": "0.12.3",
     "prettier": "2.1.1",
     "textlint": "11.7.6",
-    "textlint-filter-rule-node-types": "1.0.1",
+    "textlint-filter-rule-node-types": "1.1.0",
     "textlint-rule-preset-ja-spacing": "2.0.1",
     "textlint-rule-preset-ja-technical-writing": "4.0.1",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
