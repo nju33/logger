@@ -19,7 +19,7 @@
     "@types/jest": "26.0.14",
     "@typescript-eslint/eslint-plugin": "3.10.1",
     "@typescript-eslint/parser": "3.10.1",
-    "all-contributors-cli": "6.17.3",
+    "all-contributors-cli": "6.17.4",
     "eslint": "7.9.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-standard": "14.1.1",
