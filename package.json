@@ -47,7 +47,7 @@
     "textlint-rule-preset-ja-technical-writing": "4.0.1",
     "textlint-rule-spellcheck-tech-word": "5.0.0",
     "ts-jest": "26.5.1",
-    "typedoc": "0.20.23",
+    "typedoc": "0.20.24",
     "typedoc-plugin-markdown": "2.4.2",
     "typescript": "3.9.9"
   },
