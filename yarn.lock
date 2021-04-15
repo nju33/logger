@@ -4916,10 +4916,10 @@ format@^0.2.0:
   resolved "https://registry.yarnpkg.com/format/-/format-0.2.2.tgz#d6170107e9efdc4ed30c9dc39016df942b5cb58b"
   integrity sha1-1hcBB+nv3E7TDJ3DkBbflCtctYs=
 
-fp-ts@2.10.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.10.0.tgz#e8d54691061be6561d4fe6e5b4012eea2a66d274"
-  integrity sha512-FC2VYweD6QJ5qIKq2wGXRuTtMxIRrXqLlIhRDnxVisbmjEEENHPyf6vrQ9Tdj5Pha1o/SbdYBrfANpvaUxW0dg==
+fp-ts@2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/fp-ts/-/fp-ts-2.10.1.tgz#aa87af8d3a57af325447a1110ea5f5d3c9b881b3"
+  integrity sha512-5Fa35jOD3rGREJEVgp8w4kqbJBQpcLU6p7juzJTK0+SrGLK6b7g9XSBhHdW332AGr2GoyOocc6jifKk6L7iIag==
 
 fraction.js@^4.0.12:
   version "4.0.12"
