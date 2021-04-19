@@ -73,7 +73,7 @@
   },
   "dependencies": {
     "@nju33/jsonbin-api": "^0.0.7",
-    "@types/http-errors": "^1.6.3",
+    "@types/http-errors": "^1.8.0",
     "http-errors": "^1.8.0"
   }
 }
